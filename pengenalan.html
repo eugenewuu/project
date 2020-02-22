@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="pesan">klik</button>
+    <button class="hilang">hilang</button>
+<p id="gantian">jkhkh</p>
+    <script src="jquery.js">  </script>
+    <script>
+        $(function () {
+          
+          $(".pesan").click(function (e) {
+           $("#gantian").show();
+              $("#gantian").text("anda mengganti text");
+          });
+          $(".hilang").click(function (e) { 
+             $("#gantian").hide();
+              
+          });
+        });
+        
+    </script>
+</body>
+</html>
